@@ -168,6 +168,7 @@ nav {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Added for spacing content and image */
     padding: 0 5%;
     position: relative;
     overflow: hidden;
@@ -211,6 +212,7 @@ nav {
 }
 
 .hero p {
+    text-align: justify;
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
     max-width: 600px;
@@ -262,10 +264,7 @@ nav {
 }
 
 .hero-image {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
+    /* Removed absolute positioning for desktop */
     width: 45%;
     max-width: 600px;
     border-radius: var(--radius);
@@ -872,9 +871,8 @@ footer {
 @media (max-width: 992px) {
     .hero {
         flex-direction: column;
-        text-align: center;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        align-items: center;
+        text-align: center; /* Centrar el texto en pantallas pequeñas */
     }
     
     .hero-content {
@@ -943,6 +941,7 @@ footer {
     
     .hero h1 {
         font-size: 2.6rem;
+        text-align: center; /* Asegurar que el título también se centre en móviles */
     }
     
     .section-title {
@@ -961,6 +960,7 @@ footer {
     
     .hero p {
         font-size: 1.1rem;
+        text-align: center; /* Asegurar que el párrafo también se centre en móviles */
     }
     
     .hero-btns {
